@@ -14,6 +14,9 @@
 		6ACA7BD3215AFD7D0042407D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ACA7BD1215AFD7D0042407D /* LaunchScreen.storyboard */; };
 		6ACA7BDE215AFD7D0042407D /* Practica6_WebServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA7BDD215AFD7D0042407D /* Practica6_WebServicesTests.swift */; };
 		6ACA7BE9215AFD7D0042407D /* Practica6_WebServicesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA7BE8215AFD7D0042407D /* Practica6_WebServicesUITests.swift */; };
+		6ACA7BF7215B220B0042407D /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA7BF6215B220B0042407D /* UserViewController.swift */; };
+		6ACA7BF9215B265E0042407D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ACA7BF8215B265E0042407D /* MapViewController.swift */; };
+		6ACA7BFC215B27C30042407D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ACA7BFB215B27C30042407D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		6ACA7BE4215AFD7D0042407D /* Practica6-WebServicesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Practica6-WebServicesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACA7BE8215AFD7D0042407D /* Practica6_WebServicesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practica6_WebServicesUITests.swift; sourceTree = "<group>"; };
 		6ACA7BEA215AFD7D0042407D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6ACA7BF6215B220B0042407D /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		6ACA7BF8215B265E0042407D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		6ACA7BFB215B27C30042407D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ACA7BFC215B27C30042407D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +88,7 @@
 				6ACA7BDC215AFD7D0042407D /* Practica6-WebServicesTests */,
 				6ACA7BE7215AFD7D0042407D /* Practica6-WebServicesUITests */,
 				6ACA7BC6215AFD7A0042407D /* Products */,
+				6ACA7BFA215B27C30042407D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +111,8 @@
 				6ACA7BCF215AFD7D0042407D /* Assets.xcassets */,
 				6ACA7BD1215AFD7D0042407D /* LaunchScreen.storyboard */,
 				6ACA7BD4215AFD7D0042407D /* Info.plist */,
+				6ACA7BF6215B220B0042407D /* UserViewController.swift */,
+				6ACA7BF8215B265E0042407D /* MapViewController.swift */,
 			);
 			path = "Practica6-WebServices";
 			sourceTree = "<group>";
@@ -123,6 +133,14 @@
 				6ACA7BEA215AFD7D0042407D /* Info.plist */,
 			);
 			path = "Practica6-WebServicesUITests";
+			sourceTree = "<group>";
+		};
+		6ACA7BFA215B27C30042407D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6ACA7BFB215B27C30042407D /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +211,11 @@
 				TargetAttributes = {
 					6ACA7BC4215AFD7A0042407D = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6ACA7BD8215AFD7D0042407D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -257,7 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ACA7BCB215AFD7B0042407D /* ViewController.swift in Sources */,
+				6ACA7BF7215B220B0042407D /* UserViewController.swift in Sources */,
 				6ACA7BC9215AFD7B0042407D /* AppDelegate.swift in Sources */,
+				6ACA7BF9215B265E0042407D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
